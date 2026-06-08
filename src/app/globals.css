@@ -6,6 +6,9 @@
   --muted: #6b6b6b;
   --border: #e8e8e8;
   --surface: #fafafa;
+  --cream: #fdfcf8;
+  --accent: #3b49ad;
+  --accent-light: #e8eef9;
 }
 
 @theme inline {

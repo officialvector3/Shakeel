@@ -1,17 +1,19 @@
+import { CaseStudies } from "@/components/sections/CaseStudies";
+import { ContentHub } from "@/components/sections/ContentHub";
+import { LetMeFix } from "@/components/sections/LetMeFix";
 import { Footer } from "@/components/footer/Footer";
 import { Hero } from "@/components/hero/Hero";
-import { Projects } from "@/components/projects/Projects";
-import { Services } from "@/components/services/Services";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-neutral-950">
+    <>
       <main>
         <Hero />
-        <Services />
-        <Projects />
+        <LetMeFix />
+        <CaseStudies />
+        <ContentHub />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

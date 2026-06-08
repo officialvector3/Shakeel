@@ -6,7 +6,7 @@ export function ConsultationCTA() {
     <section className="px-6 py-16 sm:px-10 lg:px-16">
       <div className="mx-auto max-w-7xl">
         <FadeIn>
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#111111] via-[#1e2560] to-[#4a58c4] px-8 py-16 text-center sm:px-16 sm:py-20">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#1c1a18] via-[#0d5c5c] to-[#1a4a6e] px-8 py-16 text-center sm:px-16 sm:py-20">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.06),transparent_70%)]" />
 
             <div className="relative z-10">
@@ -19,7 +19,7 @@ export function ConsultationCTA() {
               <div className="mt-8">
                 <MagneticButton
                   href="mailto:hello@shakeel.dev"
-                  className="bg-[#5a6fd6] hover:bg-[#6b7fe6]"
+                  className="bg-[#b8956a] hover:bg-[#c4a052]"
                 >
                   Free 20min Consultation
                 </MagneticButton>

@@ -28,8 +28,8 @@ export function MagneticButton({
 
   const baseStyles =
     variant === "primary"
-      ? "bg-[#111111] text-white hover:bg-[#222222]"
-      : "bg-transparent text-[#111111] border border-[#e8e8e8] hover:border-[#111111]";
+      ? "bg-[#1c1a18] text-[#f5f0e6] hover:bg-[#0d5c5c]"
+      : "bg-transparent text-[#1c1a18] border border-[#e0d5c8] hover:border-[#0d5c5c]";
 
   function handleMouseMove(e: React.MouseEvent) {
     if (!ref.current) return;

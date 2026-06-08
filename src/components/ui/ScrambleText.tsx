@@ -61,7 +61,7 @@ export function ScrambleText() {
   }, []);
 
   return (
-    <span className="font-mono text-base tracking-tight text-[#6b6b6b] sm:text-lg md:text-xl">
+    <span className="font-mono text-base tracking-tight text-[#5c564e] sm:text-lg md:text-xl">
       {display}
     </span>
   );

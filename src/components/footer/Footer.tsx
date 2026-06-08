@@ -12,10 +12,10 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[#e8e8e8] px-6 pb-12 pt-28 sm:px-10 lg:px-16 lg:pt-36">
+    <footer className="border-t border-[#e0d5c8] bg-[#f5f0e6] px-6 pb-12 pt-28 sm:px-10 lg:px-16 lg:pt-36">
       <div className="mx-auto max-w-7xl">
         <FadeIn>
-          <h2 className="font-serif text-[clamp(2.5rem,8vw,7rem)] font-normal leading-[0.95] tracking-[-0.03em] text-[#111111]">
+          <h2 className="font-serif text-[clamp(2.5rem,8vw,7rem)] font-normal leading-[0.95] tracking-[-0.03em] text-[#1c1a18]">
             Let&apos;s build
             <br />
             together.

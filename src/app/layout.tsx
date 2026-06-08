@@ -1,7 +1,12 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import {
+  Cormorant_Garamond,
+  Geist,
+  Geist_Mono,
+  Instrument_Serif,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,6 +25,12 @@ const instrumentSerif = Instrument_Serif({
   weight: "400",
 });
 
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
 export const metadata: Metadata = {
   title: "Shakeel — Product Manager & Tech Founder",
   description:
@@ -34,9 +45,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} ${cormorant.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-white text-[#111111]">
+      <body className="flex min-h-full flex-col bg-[#faf7f2] text-[#1c1a18]">
         <SmoothScroll>
           <Navbar />
           {children}

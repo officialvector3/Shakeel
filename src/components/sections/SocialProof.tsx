@@ -22,7 +22,7 @@ const EVIDENCE = [
 
 export function SocialProof() {
   return (
-    <section className="bg-[#fdfcf8] px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
+    <section className="bg-[#f5f0e6] px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
       <div className="mx-auto max-w-7xl">
         <FadeIn className="mb-12 text-center">
           <p className="text-sm text-[#6b6b6b]">
@@ -41,7 +41,7 @@ export function SocialProof() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#111111] via-[#1a1f5c] to-[#3b49ad] px-6 py-14 sm:px-12 sm:py-16 lg:px-16 lg:py-20">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#1c1a18] via-[#0d5c5c] to-[#1a4a6e] px-6 py-14 sm:px-12 sm:py-16 lg:px-16 lg:py-20">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.08),transparent_60%)]" />
 
             <div className="relative z-10 mb-12 text-center lg:mb-16">
@@ -62,10 +62,10 @@ export function SocialProof() {
                   className="rounded-2xl bg-white p-6 sm:p-8"
                   style={{ animationDelay: `${i * 100}ms` }}
                 >
-                  <p className="text-3xl font-semibold tracking-tight text-[#3b49ad] sm:text-4xl">
+                  <p className="text-3xl font-semibold tracking-tight text-[#0d5c5c] sm:text-4xl">
                     {item.metric}
                   </p>
-                  <h3 className="mt-2 text-sm font-semibold text-[#3b49ad]">
+                  <h3 className="mt-2 text-sm font-semibold text-[#0d5c5c]">
                     {item.title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-[#6b6b6b]">

@@ -1,14 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #111111;
-  --muted: #6b6b6b;
-  --border: #e8e8e8;
-  --surface: #fafafa;
-  --cream: #fdfcf8;
-  --accent: #3b49ad;
-  --accent-light: #e8eef9;
+  --background: #faf7f2;
+  --foreground: #1c1a18;
+  --muted: #5c564e;
+  --border: #e0d5c8;
+  --surface: #f3f0ea;
+  --cream: #f5f0e6;
+  --sand: #ede6da;
+  --teal: #0d5c5c;
+  --gold: #b8956a;
+  --terracotta: #c17f59;
+  --charcoal: #1c1a18;
 }
 
 @theme inline {
@@ -17,9 +20,12 @@
   --color-muted: var(--muted);
   --color-border: var(--border);
   --color-surface: var(--surface);
+  --color-teal: var(--teal);
+  --color-gold: var(--gold);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-serif: var(--font-instrument-serif);
+  --font-serif: var(--font-cormorant);
+  --font-display: var(--font-instrument-serif);
 }
 
 html.lenis,
@@ -48,6 +54,10 @@ body {
 }
 
 ::selection {
-  background: #111111;
-  color: #ffffff;
+  background: #0d5c5c;
+  color: #f5f0e6;
+}
+
+.pattern-diamond {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b8956a' fill-opacity='0.07'%3E%3Cpath d='M30 0l30 30-30 30L0 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }

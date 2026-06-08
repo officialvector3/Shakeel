@@ -1,6 +1,6 @@
-import { CaseStudies } from "@/components/sections/CaseStudies";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ContentHub } from "@/components/sections/ContentHub";
+import { FeaturedCaseStudies } from "@/components/sections/FeaturedCaseStudies";
 import { LetMeFix } from "@/components/sections/LetMeFix";
 import { Services } from "@/components/sections/Services";
 import { SocialProof } from "@/components/sections/SocialProof";
@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
         <SocialProof />
         <LetMeFix />
-        <CaseStudies />
+        <FeaturedCaseStudies />
         <Services />
         <ConsultationCTA />
         <Testimonials />

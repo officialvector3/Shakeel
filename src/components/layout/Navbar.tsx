@@ -14,15 +14,15 @@ const NAV_LINKS = [
 
 export function Navbar() {
   const { scrollY } = useScroll();
-  const backdrop = useTransform(scrollY, [0, 80], [0.6, 0.92]);
+  const backdrop = useTransform(scrollY, [0, 80], [0.72, 0.95]);
   const backgroundColor = useTransform(
     backdrop,
-    (v) => `rgba(255,255,255,${v})`,
+    (v) => `rgba(250,247,242,${v})`,
   );
   const shadow = useTransform(
     scrollY,
     [0, 80],
-    ["0px 0px 0px rgba(0,0,0,0)", "0px 8px 32px rgba(0,0,0,0.06)"],
+    ["0px 0px 0px rgba(0,0,0,0)", "0px 8px 32px rgba(28,26,24,0.06)"],
   );
 
   return (
@@ -32,11 +32,11 @@ export function Navbar() {
           backgroundColor,
           boxShadow: shadow,
         }}
-        className="pointer-events-auto flex w-full max-w-4xl items-center justify-between gap-4 rounded-full border border-[#e8e8e8]/80 px-3 py-2 pl-5 backdrop-blur-xl sm:px-4 sm:pl-6"
+        className="pointer-events-auto flex w-full max-w-4xl items-center justify-between gap-4 rounded-full border border-[#e0d5c8]/90 px-3 py-2 pl-5 backdrop-blur-xl sm:px-4 sm:pl-6"
       >
         <Link
           href="/"
-          className="shrink-0 text-sm font-medium tracking-tight text-[#111111]"
+          className="shrink-0 font-serif text-sm font-medium tracking-tight text-[#1c1a18]"
         >
           Shakeel
         </Link>
@@ -46,7 +46,7 @@ export function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="rounded-full px-3.5 py-1.5 text-xs font-medium text-[#6b6b6b] transition-colors hover:text-[#111111]"
+                className="rounded-full px-3.5 py-1.5 text-xs font-medium text-[#5c564e] transition-colors hover:text-[#0d5c5c]"
               >
                 {link.label}
               </Link>
@@ -54,7 +54,10 @@ export function Navbar() {
           ))}
         </ul>
 
-        <MagneticButton href="#let-me-fix" variant="primary">
+        <MagneticButton
+          href="#let-me-fix"
+          className="bg-[#0d5c5c] hover:bg-[#0a4a4a]"
+        >
           Let me fix
         </MagneticButton>
       </motion.nav>
